@@ -1,0 +1,29 @@
+$color_1: white;
+$background-color_1: #691ebe;
+$background-color_2: #551b98;
+
+:host {
+  display: inline-block;
+  padding: 0.65rem 1.35rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+  background-color: $background-color_1;
+  color: $color_1;
+  border: none;
+
+  &:hover {
+    background-color: $background-color_2;
+
+    .icon {
+      transform: translateX(4px);
+    }
+  }
+}
+
+.icon {
+  display: inline-block;
+  margin-left: 0.5rem;
+  transition: transform 0.2s ease-in-out;
+}

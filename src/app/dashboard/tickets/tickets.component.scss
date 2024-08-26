@@ -1,0 +1,31 @@
+$color_1: #4f4b53;
+$color_2: #38343c;
+
+#tickets {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 15rem;
+  }
+  li {
+    margin: 0.5rem 0;
+  }
+  p {
+    margin: 0;
+    color: $color_1;
+  }
+  h2 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: $color_2;
+  }
+}
+@media (min-width: 768px) {
+  #tickets {
+    flex-direction: row;
+  }
+}
